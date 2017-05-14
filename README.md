@@ -1,7 +1,7 @@
 <ul>
   {% for post in _posts %}
     <li>
-      <a href="{{ post.url }}">{{ https://github.com/piratax007/LaTeX_Course/_posts/post.title }}</a>
+      <a href="{{ post.url }}">{{ /_posts/post.title }}</a>
     </li>
   {% endfor %}
 </ul>
