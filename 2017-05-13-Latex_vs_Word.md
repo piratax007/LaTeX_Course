@@ -1,10 +1,3 @@
----
-layout: post
-title:  "LaTeX vs Word"
-date:   2017-05-13 16:16:01 -0600
-categories: Lectures
----
-
 # Una introducción a LaTeX, Escritura Profesional y Publicación Científica (i.e. Evadiendo los tradicionales procesadores de Texto)
 
 Para empezar es bueno tomarse un momento para pensar un poco en la base de lo que es LaTeX y qué significa como herramienta tecnológica; después de ver varios ejemplos de contextos en los que puede emplearse eficientemente LaTeX vamos a aprovehar [esta entrada de Math Vault][1] que nos presenta una introducción a LaTeX y algunas importantes razones para elegir LaTeX sobre los tradicionales procesadores de texto.
