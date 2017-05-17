@@ -1,19 +1,19 @@
-# Curso de Introducción a $\LaTeX$
+# Curso de Introducción a LaTeX
 
-En este repositorio encuentra todos los materiales de formación, ejercicios, solución de los ejercicios, presentaciones y lecturas recomendadas, del curso de **introducción a $\LaTeX$**.
+En este repositorio encuentra todos los materiales de formación, ejercicios, solución de los ejercicios, presentaciones y lecturas recomendadas, del curso de **introducción a LaTeX**.
 
-Esta primera versión del curso esta dirigido a usuarios que no han tenido ninguna aproximación al trabajo con $\LaTeX$ por lo tanto los contenidos aquí publicados son aptos para los más nóveles, sin embargo, en versiones posteriores de este curso se pretende abordar paquetes y librerías específicas para el trabajo avanzado con $\LaTeX$ hasta llegar a la creación de hojas de estilo personalizadas.
+Esta primera versión del curso esta dirigido a usuarios que no han tenido ninguna aproximación al trabajo con LaTeX por lo tanto los contenidos aquí publicados son aptos para los más nóveles, sin embargo, en versiones posteriores de este curso se pretende abordar paquetes y librerías específicas para el trabajo avanzado con LaTeX hasta llegar a la creación de hojas de estilo personalizadas.
 
 ## Contenido del curso
 
 Los contenidos del repositorio se actualizarán permanentemente de acuerdo a como se desarrollen las sesiones de trabajo.
 
 1. ### Lección 1:
-	1.1 ¿Qué es $\LaTeX$?
-	1.2 ¿Por qué $\LaTeX$?
-	1.3 ¿Dónde adquirir $\LaTeX$?
-	1.4 Instalación local y editores en línea 
-	1.5 *Hola mundo $\LaTeX$* - Primeros pasos
+* ¿Qué es LaTeX?
+* ¿Por qué LaTeX?
+* ¿Dónde adquirir LaTeX?
+* Instalación local y editores en línea 
+* *Hola mundo LaTeX* - Primeros pasos
 #### Documentación
 Para esta primera lección puede consultar
 * [LaTeX vs Word][1] donde se responden con detalle las tres primeras preguntas de esta lección.

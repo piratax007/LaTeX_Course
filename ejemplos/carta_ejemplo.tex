@@ -1,0 +1,78 @@
+%% Inicio del archivo `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% Este trabajo puede ser distribuido o modificado bajo las 
+% condiciones de la LaTeX Project Public License V1.3c, 
+% disponible en http://www.latex-project.org/lppl/.
+%
+% Traducción al Español por Fausto M. Lagos (piratax007@protonmail.ch), 2016.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % posibles opciones de tamaño de fuente ('10pt', '11pt' and '12pt'), papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') y familia de fuentes ('sans' and 'roman')
+
+% temas moderncv
+\moderncvstyle{classic}                             % Los estilos disponibles son 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % las opciones de color son 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % descomentar al inicio de la línea para definir la fuente por defecto; use '\sfdefault' para sans serif por defecto, '\rmdefault' para roman, o cualquier otro nombre de fuente instalada en sus sistema
+%\nopagenumbers{}                                  % descomente para eliminar el numerado automático de las páginas en cartas de más de una página
+
+% Codificación de carácteres
+\usepackage[utf8]{inputenc}                        % Si no esta usando xelatex o lualatex, remplace por la codificación que este usando
+%\usepackage{CJKutf8}                              % descomente si necesita usar CJK para escribir su carta en Chino, Japones or Koreano
+\usepackage[spanish, english]{babel}			   % comentar si su carta esta escrita en un idioma diferente del Español
+
+% Configuración de márgenes
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % descomente si quiere modificar el ancho de columna para la fecha
+%\setlength{\makecvtitlenamewidth}{10cm}           % para el estilo 'classic', si quiere forzar el ancho del nombre. la longitud es normalmente calculada para evitar sobrelapamientos con su información personal; descomente esta línea bajo su propio riesgo
+
+% Información personal
+\name{Pierre}{de Fermat.}
+\title{Abogado}                               % opcional, remover o comentar si no quiere que aparezca su título personal
+\address{La habitación}{150461}{Francia}% opcional, remover o comentar si no quiere que aparezca sus datos de ubicación; el código postal y país son argumentos que puede omitirse o pasarse vacíos
+\phone[mobile]{3111601665}		                   % opcional, remover o comentar si no quiere incluir su número de móvil
+%\phone[fixed]{3115483925}       		           % opcional, remover o comentar si no quiere incluir su número de teléfono fijo
+%\phone[fax]{+3~(456)~789~012}                      % opcional, remover o comentar si no quiere incluir su número de fax
+\email{fermat@ams.com}                               % opcional, remover o comentar si no quiere incluir su dirección de email
+\homepage{https://github.com/piratax007}                         % opcional, remover o comentar si no quiere incluir su dirección web
+%\extrainfo{información adicional}                  % opcional, remover o comentar si no quiere información adicional
+\photo[64pt][0.4pt]{imágen}                        % opcional, remover o comentar si no quiere incluir su fotografía o logosímbolo; '64pt' es la algura de la imágen, 0.4pt es el grosor del cuadro al rededor de la imágen (indique 0pt para no utilizar recuadro), 'imágen' es la ubicación y nombre del archivo de imágen a incluir
+\quote{Some quote}                                 % opcional, remover o comentar si no quiere una frase o cita
+
+% para mostrar etiquetas numéricas en la bibliografía (por defecto no se muestran etiquecas); descomente las siguientes líneas solo si usa referencias bibliográficas en su carta
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]} % Considere reemplazar la línea 44 con esta
+
+% bibliografía con múltiples entradas
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            contenido
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       carta       ---------------------------------------------------------
+% Datos del destinatario
+\recipient{Prof. Leonard Euler}{La eternidad}
+\date{Mayo 17, 2017}
+\opening{Recordado profesor,}
+\closing{Atentamente,}
+\enclosure[Anexos]{Copia del libro de Diofanto}          % opcional, remover o comentar si no incluye anexos 
+\makelettertitle
+
+Recientemente repasando el texto de la \emph{aritmética} de Diofanto se me ha ocurrido un curioso resultado que a mi parecer no tiene interés más allá de la curiosidad pero que quiero compartir con usted quien es un brillante cabellero de las matemáticas.
+
+A partir de las ternas pitagóricas, es bien conocido por todos que la ecuación $x^2 + y^2 = x^2$ tiene solución para cualquier conjunto $\{x, y, z\}$ de números enteros, sin embargo, y sorpréndese querido amigo, tal ecuación deja de tener soluciones cuando el exponente es un entero mayor a 2, lo cual he decidido expresar categóricamente de la siguiente forma
+
+\begin{center}
+	``No existen enteros $x, y, z$ y $n$ tal que $x^n + y^n = z^n$ para $n \geq 3$''.
+\end{center}
+
+Estoy seguro que un importante grupo de colegas matemáticos estarán interesados en abordar la demostración de este resultado, sin embargo, tal como lo ha demostrado el profesor Wiles menos del 1\% logrará descifrarlo por completo.
+
+Con la intensión de no defraudar sus esfuerzos en la busqueda de mi elegante demostración de éste, no la incluiré en esta misiva.
+
+\makeletterclosing
+
+\end{document}
