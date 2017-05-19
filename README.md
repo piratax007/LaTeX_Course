@@ -33,6 +33,6 @@ Para poder proveer un permanente soporte se han habilitado los siguientes canale
 
 [1]: ./2017-05-13-Latex_vs_Word.md
 [2]: https://www.overleaf.com
-[3]: Presentacion.pdf
+[3]: ./presentaciones/leccion_1.pdf
 [4]: https://www.youtube.com/watch?v=cwCQm61-LP0
 [5]: ./2017-05-15-Instalacion_primeros_pasos.md
