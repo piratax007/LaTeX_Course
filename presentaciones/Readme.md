@@ -15,4 +15,4 @@ Los contenidos de estas presentaciones están construidos con base en el curso *
 * Paquetes
 * Utilizando plantillas
 
-[1]: ./presentaciones/leccion_1.pdf
+[1]: ./leccion_1.pdf
