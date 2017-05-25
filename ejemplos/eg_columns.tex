@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{lipsum}
+
+\title{Título del artículo}
+\author{Johan Sebastian Mastropiero}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		\lipsum[1]
+	\end{abstract}
+	
+	\section{Utilizando los comandos básicos}
+		Los comandos \texttt{twocolumn} y \texttt{onecolumn} distribuyen el contenido escrito después del comando en dos o una columna respectivamente, pero cada vez que se invoca uno de estos comandos se creará una página nueva
+	
+		\subsection{Ejemplo de \texttt{twocolumn}}
+			\twocolumn
+			\lipsum[1-4]
+	
+		\subsection{Ejemplo de \texttt{onecolumn}}
+			\onecolumn
+			\lipsum[2-3]
+\end{document}

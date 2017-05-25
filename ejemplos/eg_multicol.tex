@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+\title{Título del artículo}
+\author{Johan Sebastian Mastropiero}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		\lipsum[1]
+	\end{abstract}
+	
+	\section{Uso básico del paquete \texttt{multicol}}
+		Cambiar entre una y varias columnas es muy fácil y no se tiene el problema de la aparición de nuevas páginas no deseadas. 
+		\begin{multicols}{2}
+			\lipsum[7-9]
+		\end{multicols}	
+	
+	Solo con escribir fuera del ambiente multicols estarás escribiendo nuevamente en la distribución general del documento.
+	\lipsum[1-2]
+	
+	\subsection{Modificando la configuración de las columnas}
+	\renewcommand{\columnseprule}{1pt} % Define el ancho de la regla que separa las columnas	
+	\setlength\columnsep{3mm} % define el espacio entre columnas
+	\begin{multicols}{3}
+		\lipsum[1-2]
+	\end{multicols}
+\end{document}
