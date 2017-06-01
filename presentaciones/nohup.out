@@ -1,0 +1,11 @@
+[2364:0601/082216:ERROR:browser_main_loop.cc(162)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+/home/piratax007/.themes/TrOn/gtk-2.0/menurc:17: Imposible encontrar un archivo imagen en pixmap_path: «menu/mtbg.png»
+/home/piratax007/.themes/TrOn/gtk-2.0/menurc:19: Background image options specified without filename
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:35: Imposible encontrar un archivo imagen en pixmap_path: «arrow/eap.png»
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:35: Background image options specified without filename
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:41: Imposible encontrar un archivo imagen en pixmap_path: «arrow/eap.png»
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:41: Background image options specified without filename
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:47: Imposible encontrar un archivo imagen en pixmap_path: «arrow/eap.png»
+/home/piratax007/.themes/TrOn/gtk-2.0/expanderc:47: Background image options specified without filename
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[2381:0601/083059:WARNING:x11_util.cc(1408)] X error received: serial 13012, error_code 3 (BadWindow (invalid Window parameter)), request_code 4, minor_code 0 (X_DestroyWindow)

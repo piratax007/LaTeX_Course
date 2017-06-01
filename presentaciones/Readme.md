@@ -4,6 +4,8 @@ Estas presentaciones estas disponibles bajo una licencia CC-By-Nc-SA y sus fuent
 
 Los contenidos de estas presentaciones están construidos con base en el curso *An Interactive Introduction to LaTeX* del Doctor John D. Less-Miller (profesor de University of Bristol), el curso oficial de introducción a LaTex diseñado por Overleaf.
 
+Otros documentos que pueden consultarse y sobre los que se han construido los contenidos de este curso, pueden encontrarse en la sección de documentación en la [página principal del repositorio.][4]
+
 ## Presentación 1: [Introducción y primeros pasos][1]
 * ¿Cómo funciona LaTeX?
 * Primeros pasos
@@ -15,4 +17,22 @@ Los contenidos de estas presentaciones están construidos con base en el curso *
 * Paquetes
 * Utilizando plantillas
 
+## Presentación 2: [Estructura general de un documento LaTeX][2]
+* ¿Dónde adquirir LaTeX?
+* Documentación oficial
+* ¿Dónde encontrar ayuda?
+* Estructura general de un documento LaTeX
+* Distribución del documento en columnas
+
+## Presentación 3: [Escribiendo matemáticas][3]
+* Modo matemático
+* Fracciones
+* Paréntesis y signos de agrupación
+* Matrices
+* Alineación de ecuaciones
+* El comando newtheorem
+
 [1]: ./leccion_1.pdf
+[2]: ./leccion_2.pdf
+[3]: ./leccion_3.pdf
+[4]: https://github.com/piratax007/LaTeX_Course

@@ -6,6 +6,8 @@ Esta primera versión del curso esta dirigido a usuarios que no han tenido ningu
 
 ## Contenido del curso
 
+Para desarrollar este curso se ha recomendado utilizar texmaker, editor LaTeX (Software Libre y multiplataforma) que puede descargar en su versión más actualizada desde [aquí][18] (si usted es usuario de GNU/Linux puede hacer la instalación desde los repositorios de su distribución), y **Overleaf**, una de las plataformas de edición de documentos LaTeX en línea mejor reconocidas, puede habilitar su cuenta gratuita desde [aquí][19].
+
 Los contenidos del repositorio se actualizarán permanentemente de acuerdo a como se desarrollen las sesiones de trabajo.
 
 ### [Lección 1][4]:
@@ -22,18 +24,28 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 * Configuración y puesta a punto del editor de Overleaf
 
 ### [Lección 2][7]:
+* Documentación y ayuda
 * Estructura general de un documento LaTeX
 * Uso de columnas
 	* Los comandos `twocolumn` y `onecolumn`
 	* El paquete `multicolumn`
 	* El paquete `paracol`
 
+### [Lección 3][16]:
+* Modo matemático
+* Fracciones
+* Paréntesis y signos de agrupación
+* Matrices
+* Alineación de ecuaciones
+* El comando `newtheorem`
+
 #### Documentación
-Enlaces recomendados para la Lección 1:
+Enlaces recomendados para cada lección:
 * [LaTeX vs Word][1] post donde se responden con detalle las tres primeras preguntas de esta lección.
 * [Instalación y primeros pasos][5] post donde se enseña a configurar una instalación local en GNU / Linux y a disponer de diccionarios para la corrección ortográfica de sus documentos, aquí encontrará un primer ejercicio a desarrollar bien desde el editor en línea [Overleaf][2] o bien desde su instalación local.
-* [Presentación][3] y [vídeo][4] de la Lección 1.
+* [Presentación][3] de la Lección 1.
 * [Presentación][15] de la Lección 2.
+* [Presentación][17] de la Lección 3.
 
 Documentación y ayuda de LaTeX
 En inglés
@@ -41,6 +53,7 @@ En inglés
 * [Wikibook sobre LaTeX][9]
 * [Tutoriales de aprendizaje de LaTeX en Sharelatex][10]
 * [La "principal" comunidad de LaTeX disponible en stackexchange][11]
+* [Compendio de más de 14000 signos y símbolos con sus respectivos comandos][20]
 
 En español
 * [Blog dedicado a desarrollar ejemplos de LaTeX][12]
@@ -75,3 +88,10 @@ En este canal publicamos cápsulas (mini tutoriales), compartimos documentación
 [13]: https://es.wikibooks.org/wiki/Manual_de_LaTeX
 [14]: https://www.overleaf.com/gallery/tagged/spanish#.WSCyXLNAlQK
 [15]: ./presentaciones/leccion_2.pdf
+[16]: https://www.youtube.com/watch?v=56X70PLJBSs
+[17]: ./presentaciones/leccion_3.pdf
+[18]: http://www.xm1math.net/texmaker/download.html
+[19]: https://www.overleaf.com/signup?ref=723765e6052f
+[20]: https://archive.org/stream/symbols-a4#page/n0/mode/2up
+
+
