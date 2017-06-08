@@ -10,20 +10,20 @@ Para desarrollar este curso se ha recomendado utilizar texmaker, editor LaTeX (S
 
 Los contenidos del repositorio se actualizarán permanentemente de acuerdo a como se desarrollen las sesiones de trabajo.
 
-### [Lección 1][4]:
+### [Lección 1][4]: Introducción y primeros pasos
 * ¿Qué es LaTeX?
 * ¿Por qué LaTeX?
 * ¿Dónde adquirir LaTeX?
 * Instalación local y editores en línea 
 * *Hola mundo LaTeX* - Primeros pasos
 
-### [Lección 1.5][6]:
+### [Lección 1.5][6]: Configuración de los editores Texmaker y Overleaf
 * Instalación de una distribución y un editor de LaTeX
 * Administración de paquetes
 * Configuración y puesta a punto del editor Texmaker
 * Configuración y puesta a punto del editor de Overleaf
 
-### [Lección 2][7]:
+### [Lección 2][7]: Estructura general de un documento LaTeX
 * Documentación y ayuda
 * Estructura general de un documento LaTeX
 * Uso de columnas
@@ -31,13 +31,23 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 	* El paquete `multicolumn`
 	* El paquete `paracol`
 
-### [Lección 3][16]:
+### [Lección 3][16]: Escribiendo Matemáticas
 * Modo matemático
-* Fracciones
-* Paréntesis y signos de agrupación
-* Matrices
-* Alineación de ecuaciones
+	* Fracciones
+	* Paréntesis y signos de agrupación
+	* Matrices
+	* Alineación de ecuaciones
 * El comando `newtheorem`
+
+### [Leccion 4][23]: Tomando el control de LaTeX
+* Definiendo colores
+	* El paquete `xcolor`
+* Definiendo nuevos comandos
+	* El comando `newcommand`
+* Definiendo nuevos ambientes
+	* El comando `newtheorem`
+	* El comando `newenvironment`
+* Organizando el código con el comando `input`
 
 #### Documentación
 Enlaces recomendados para cada lección:
@@ -46,6 +56,7 @@ Enlaces recomendados para cada lección:
 * [Presentación][3] de la Lección 1.
 * [Presentación][15] de la Lección 2.
 * [Presentación][17] de la Lección 3.
+* [Presentación][22] de la Lección 4.
 
 Documentación y ayuda de LaTeX
 En inglés
@@ -59,6 +70,7 @@ En español
 * [Blog dedicado a desarrollar ejemplos de LaTeX][12]
 * [Traducción del wikibook de LaTeX (en construcción)][13]
 * [Repositorio de plantillas de Overleaf][14]
+* [Repositorio de ejemplos de este curso][21]
 
 ## Contacto y soporte
 Para poder proveer un permanente soporte se han habilitado los siguientes canales de comunicación:
@@ -93,5 +105,8 @@ En este canal publicamos cápsulas (mini tutoriales), compartimos documentación
 [18]: http://www.xm1math.net/texmaker/download.html
 [19]: https://www.overleaf.com/signup?ref=723765e6052f
 [20]: https://archive.org/stream/symbols-a4#page/n0/mode/2up
+[21]: ./ejemplos
+[22]: ./presentaciones/leccion_4.pdf
+[23]: https://youtu.be/vEkD0KlBlPY
 
 

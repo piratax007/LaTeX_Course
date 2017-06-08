@@ -1,0 +1,70 @@
+%% -------------------------------------------------------------------------
+%% 2017 por Fausto M. Lagos S. <piratax007@protonmail.ch>
+%% 
+%% Este trabajo puede ser distribuido o modificado bajo los
+%% términos y condiciones de la LaTeX Project Public License (LPPL) v1.3C, 
+%% o cualquier versión posterior. La última versión de esta licencia
+%% puede verse en:
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% -------------------------------------------------------------------------
+%% Usted es libre de usarlo, modificarlo o distribuirlo siempre que se
+%% respeten los términos de la licencia y se reconozca al autor original
+%% -------------------------------------------------------------------------
+%% Estos comandos permiten dibujar rápidamente un intervalo de cualquier
+%% tipo en recta real.
+%% -------------------------------------------------------------------------
+%% Paquetes necesarios
+\usepackage{tikz}
+\usetikzlibrary{babel, shapes}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+%% -------------------------------------------------------------------------
+
+%----------------------------------------------------
+% Parámetros de entrada
+% #1 cota inferior
+% #2 cota superior
+% #3 posición vertical del intervalo
+% #4 fill o fill = none o <-, tipo de cota
+% #5 fill o fill = none o ->, tipo de cota
+% #6 nonInf o inf, tipo de intervalo
+% #7 color
+\newcommand{\interval}[7]{
+    \IfEqCase {#6}{
+        {nonInf}{
+        \node [circle, draw, #4, line width = 1.5pt, color = #7, inner sep = 0pt, minimum size = 5pt] (ci) at (#1, #3) {};
+        \node [circle, draw, #5, line width = 1.5pt, color = #7, inner sep = 0pt, minimum size = 5pt] (cs) at (#2, #3) {};
+        \draw [line width = 1.5pt, color = #7] (ci) -- (cs);
+        \draw (ci) -- (#1, -.2);
+        \node (tag) at (#1, -.4) {#1};
+        \draw (cs) -- (#2, -.2);
+        \node (tag) at (#2, -.4) {#2};
+        }
+        {inf}{
+        	\IfEqCase {#4}{
+            	{<-}{
+			        \node [circle, draw, #5, line width = 1.5pt, color = #7, inner sep = 0pt, minimum size = 5pt] (cs) at (#2, #3) {};
+                    \draw [#4, line width = 1.5pt, color = #7] (#1 - 1.5, #3) -- (cs);
+                    \draw (cs) -- (#2, -.2);
+                    \node (tag) at (#2, -.4) {#2};
+                }
+                {->}{
+                	\node [circle, draw, #5, line width = 1.5pt, color = #7, inner sep = 0pt, minimum size = 5pt] (ci) at (#1, #3) {};
+                    \draw [->, line width = 1.5pt, color = #7] (ci) -- (#2 + 1.5, #3);
+                    \draw (ci) -- (#1, -.2);
+                    \node (tag) at (#1, -.4) {#1};
+                }
+            }
+        }
+        }[\PackageError{tree}{Undefined option to intervals: #6}{}]
+}
+%----------------------------------------------------
+% Recta Real
+\newcommand{\reaLine}[2]{
+    \node (li) at (#1 - 1.5, 0) {};
+    \node (ls) at (#2 + 1.5, 0) {$\mathbb{R}$};
+	\draw [<->] (li) -- (ls);
+}

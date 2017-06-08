@@ -1,0 +1,21 @@
+\usepackage{chemfig}
+
+\newcommand{\cafeina}[1]{
+	\scalebox{#1}{
+		\chemfig{*6((=O)-N(-CH_3)-*5(-N=-N(-CH_3)-=)--(=O)-N(-H_3C)-)}
+	}
+}
+
+\newcommand{\benceno}[1]{
+	\scalebox{#1}{
+		\chemfig{*6(=-=-=-)}
+	}
+}
+
+\newcommand{\adrenalina}[1]{
+	\scalebox{#1}{
+		\definesubmol{&}{-[,,,,draw=none]}
+		\definesubmol{&&}{-[,,,2,draw=none]}
+		\chemfig{*6((-HO)-=*6(!&!{&&}HN(-CH_3)-[,,2]-(<0H)-)-=-(-HO)=)}
+	}
+}

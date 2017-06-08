@@ -1,0 +1,14 @@
+\usepackage{tcolorbox}
+
+\newtheorem{definition}{Definición}
+
+\newtheorem{ejemplo}{Ejemplo}[section]
+
+\newenvironment{remark}[1]
+{
+	\begin{tcolorbox}[colback = myBlue!25, colframe = blue254!75, title=#1, arc = 3mm, sharp corners = northwest]
+	\fontfamily{qag}\selectfont
+}
+{
+	\end{tcolorbox}
+}

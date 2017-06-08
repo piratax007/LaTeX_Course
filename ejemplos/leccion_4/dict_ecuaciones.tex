@@ -1,0 +1,39 @@
+\usepackage{xstring} % Paquete necesario para cargar condicionales en newcommand
+
+\newcommand{\Fourier}[1][eq]{
+	\IfEqCase {#1}{
+		{eq}{
+			\begin{equation}
+				\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx
+			\end{equation}
+		}
+		{disp}{
+			\[
+				\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx
+			\]
+		}
+		{inLine}{
+			$\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx$
+		}
+	}
+}
+
+\newcommand{\Wave}{
+\begin{equation}
+	\frac{\partial ^2u}{\partial t^2} = c^2\frac{\partial ^2u}{\partial x^2}
+\end{equation}
+}
+
+\newcommand{\Maxwell}{
+	\begin{align*}
+		\nabla \cdot E &= 0 & \nabla \times E &= -\frac{1}{c}\frac{\partial H}{\partial t} \\
+		\vspace{5pt} \\
+		\nabla \cdot H &= 0 & \nabla \times H &= \frac{1}{c}\frac{\partial E}{\partial t}
+	\end{align*}
+}
+
+\newcommand{\Schrodinger}{
+	\begin{equation}
+		i\hbar \frac{\partial}{\partial t}\psi = \hat{H}\psi
+	\end{equation}
+}

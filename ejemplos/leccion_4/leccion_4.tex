@@ -1,0 +1,139 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{paracol}
+\usepackage{subcaption}
+
+\title{Tomando del control de \LaTeX}
+\author{Mg. Fausto M. Lagos S.}
+\date{\today}
+
+\input{colores.tex}
+\input{dict_ecuaciones.tex}
+\input{intervalos.tex}
+\input{quimica.tex}
+\input{ambientes.tex}
+
+\DeclareRobustCommand{\eqCuadratica}{
+	\begin{equation}
+		x_{1,2} = \frac{1}{2a}\Bigl(-b \pm\sqrt{b^2 - 4ac}\Bigr)
+	\end{equation}
+}
+
+\begin{document}
+\maketitle
+En este ejemplo vamos a explorar la definición de comandos cada vez más elaborados y también vamos a ver cómo definir nuevos ambientes. Definir comandos y ambientes es una tarea que nos puede ahorrar mucho tiempo y trabajo, veamos algunos ejemplos.
+
+\section{Definición y uso de \texttt{newcommand}}
+
+Aquí voy a escribir la ecuación cuadrática
+\eqCuadratica{}
+
+Ahora, a partir del diccionario de ecuaciones \texttt{dict\_ecuaiones.tex} voy a escribir las ecuaciones de Maxwell
+
+\textcolor{blue254}{\Maxwell{}}
+
+La transformada de Fourier puede presentarse de tres formas diferentes, en línea \Fourier[inLine], como una ecuación numerada
+
+\Fourier{}
+
+o en formado display
+
+\Fourier[disp]
+
+y ¿qué tal algo más elaborado como la molécula de la cafeína?
+\begin{center}
+	\cafeina{.5}
+\end{center}
+
+o la del benceno
+\begin{center}
+	\benceno{.5}
+\end{center}
+
+y ¿qué tal la de la adrenalina?
+\begin{center}
+	\adrenalina{.5}
+\end{center}
+
+Hagamos algo más complejo, que tal comandos con parámetros de entrada condicionados, los comandos \texttt{reaLine} (con dos parámetros de entrada) e \texttt{interval} (con siete parámetros de entrada) del archivo \texttt{intervalos.tex} permiten construir rápidamente la representación gráfica de un intervalo sobre la recta real.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[t]{.47\textwidth}
+	\centering
+		\begin{tikzpicture}
+			\reaLine{0}{2}
+			\interval{0}{2}{.3}{<-}{fill = none}{inf}{myBlue}
+		\end{tikzpicture}
+	\caption{Intervalo $(-\infty, 2)$}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{.47\textwidth}
+	\centering
+		\begin{tikzpicture}
+			\reaLine{2}{4}
+			\interval{2}{4}{.3}{->}{fill = none}{inf}{myBlue}
+		\end{tikzpicture}
+	\caption{Intervalo $(2, \infty)$}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{1\textwidth}
+	\centering
+		\begin{tikzpicture}
+			\reaLine{-2}{2}
+			\interval{-2}{2}{.3}{fill}{fill = none}{nonInf}{myBlue}
+		\end{tikzpicture}
+	\caption{Intervalo $[-2,2)$}
+	\end{subfigure}	
+	\caption{Uso del comando \texttt{interval}}
+\end{figure}
+
+\section{Definición y uso de \texttt{newenvironment}}
+
+Ahora trabajemos con la definición de ambientes, para empezar un ambiente numerado con \texttt{newtheorem}
+
+\begin{definition}
+Se dice que un par de funciones $f_1$ y $f_2$ son \textbf{linealmente dependientes} en un intervalo $I$ si existe un par de constantes $c_1$ y $c_2$ no ambas nulas de tal forma que
+\[
+	c_1f_1(x) + c_2f_2(x) = 0, \;\;\;\; \forall x \in I,
+\]
+si tales contantes no existen, las funciones se dicen \textbf{linealmente independientes}, es decir $f_1$ y $f_2$ son \textbf{linealmente independientes} si y solo si $c_1f_1(x) + x_2f_2(x) = 0$ para $c_1 = c_2 = 0$ .
+\end{definition}
+
+También se pueden crear ambientes numerados para cada sección del documento
+
+\begin{ejemplo}
+	Dado el problema de valor inicial
+	\[
+		9y'' + 6y' + 82y + 0, \;\;\; y_0(0) = 1 \text{ e } y_0'(0) = 2
+	\]
+	al sustituir $y = e^{\lambda x}$ se obtiene la ecuación característica
+	\[
+		9\lambda^2 + 6\lambda + 82 = 0
+	\]
+	cuyas raíces son los números complejos conjugados
+	\[
+		\lambda_1 = -\frac{1}{3} - 3i \text{ y } \lambda_2 = -\frac{1}{3} + 3i,
+	\]
+	....
+\end{ejemplo}
+
+\begin{remark}{Importante}
+	Puedes utilizar comandos y ambientes uno sobre otros, por ejemplo, vamos a utilizar el comando \texttt{interval} para definir en el ambiente \texttt{remark}, un intervalo...
+	\begin{center}
+		\begin{tikzpicture}
+			\reaLine{-1}{3}
+			\interval{-1}{3}{.3}{fill}{fill}{nonInf}{orange22}
+		\end{tikzpicture}
+	\end{center}
+	también se puede incluir alguna de nuestras moléculas
+	\begin{center}
+		\cafeina{.6}
+	\end{center}
+\end{remark}
+
+\end{document}
