@@ -39,7 +39,7 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 	* Alineación de ecuaciones
 * El comando `newtheorem`
 
-### [Leccion 4][23]: Tomando el control de LaTeX
+### [Lección 4][23]: Tomando el control de LaTeX
 * Definiendo colores
 	* El paquete `xcolor`
 * Definiendo nuevos comandos
@@ -49,6 +49,17 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 	* El comando `newenvironment`
 * Organizando el código con el comando `input`
 
+### [Lección 5][24]: Administrar figuras y crear tablas
+* Configurar margenes con `vmargin`
+* Configurar tabla de contenido y lista de figuras y tablas
+* Administrar figuras
+	* Incluir imágenes
+	* El ambiente `wrapfig`
+	* El ambiente `subfigure`
+* Construir tablas
+	* Agregar color
+	* Combinar celdas
+
 #### Documentación
 Enlaces recomendados para cada lección:
 * [LaTeX vs Word][1] post donde se responden con detalle las tres primeras preguntas de esta lección.
@@ -57,6 +68,8 @@ Enlaces recomendados para cada lección:
 * [Presentación][15] de la Lección 2.
 * [Presentación][17] de la Lección 3.
 * [Presentación][22] de la Lección 4.
+* [Presentación][25] de la Lección 5.
+* [Tablas y cuadros][26] post sobre cómo construir tablas y cuadros simples.
 
 Documentación y ayuda de LaTeX
 En inglés
@@ -108,5 +121,8 @@ En este canal publicamos cápsulas (mini tutoriales), compartimos documentación
 [21]: ./ejemplos
 [22]: ./presentaciones/leccion_4.pdf
 [23]: https://youtu.be/vEkD0KlBlPY
+[24]: https://youtu.be/c_E4c9PFj4o
+[25]: ./presentaciones/leccion_5.pdf
+[26]: ./2017-06-15-Tablas_cuadros.md
 
 

@@ -32,7 +32,22 @@ Otros documentos que pueden consultarse y sobre los que se han construido los co
 * Alineación de ecuaciones
 * El comando newtheorem
 
+## Presentación 4: [Tomando el control de LaTeX][5]
+* Definir una paleta de colores personalizada
+* Definir nuevos comandos
+* Definir nuevos ambientes
+
+## Presentación 5: [Administrar figuras y construir tablas][6]
+* Objetos flotantes `figure` y `table`
+* Incluir figuras
+	* El paquete `wrapfig`
+	* El paquete `subcaption`
+* Construir tablas
+	* El ambiente `tabular`
+
 [1]: ./leccion_1.pdf
 [2]: ./leccion_2.pdf
 [3]: ./leccion_3.pdf
 [4]: https://github.com/piratax007/LaTeX_Course
+[5]: ./leccion_4.pdf
+[6]: ./leccion_5.pdf
