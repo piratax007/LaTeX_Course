@@ -20,6 +20,8 @@
 \usepackage{xkeyval}
 \usepackage{minted}
 \usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{xstring}
 
 \newcommand{\bftt}[1]{\textbf{\texttt{#1}}}
 \newcommand*\keystroke[1]{%
@@ -37,7 +39,7 @@
   ;
 }
 \newcommand{\keystrokebftt}[1]{\keystroke{\bftt{#1}}}
-\newcommand{\comment}[1]{{\color[HTML]{008080}\textit{\textbf{\texttt{#1}}}}}
+\renewcommand{\comment}[1]{{\color[HTML]{008080}\textit{\textbf{\texttt{#1}}}}}
 \newcommand{\cmd}[1]{{\color[HTML]{008000}\bftt{#1}}} % comandos
 \newcommand{\bs}{\char`\\}
 \newcommand{\cmdbs}[1]{\cmd{\bs#1}}
@@ -87,3 +89,29 @@
   \node[anchor=south west] at (box.south west) {#3};
   \node[anchor=north east] at (box.north east) {#4};
  \end{tikzpicture}}$\hskip-\tabcolsep}}
+ 
+\newtheorem{definition}{\bf Definición:}
+
+\newtheorem{ejemplo}{\bf Ejemplo:}[section]
+
+\newcounter{remark}
+\newenvironment{remark}[1]
+{
+	\refstepcounter{remark}
+	\begin{tcolorbox}[colback = myBlue!25, colframe = firebrick!75, title=\textbf{Observación \theremark: } #1, arc = 3mm, sharp corners = northwest]
+	\fontfamily{qag}\selectfont
+}
+{
+	\end{tcolorbox}
+}
+
+\newcommand{\Ref}[2]{
+	\IfEqCase {#1}{
+		{fig}{
+			\textbf{Fig. \ref{#2}}
+		}
+		{tab}{
+			\textbf{Tabla. \ref{#2}}
+		}
+	}
+}

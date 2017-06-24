@@ -60,6 +60,11 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 	* Agregar color
 	* Combinar celdas
 
+### [Leccion 6][30]: Documentos dinámicos y referencias cruzadas
+* Contadores
+* Referencias cruzadas
+* Documentos dinámicos - el paquete `hyperref`
+
 #### Documentación
 Enlaces recomendados para cada lección:
 * [LaTeX vs Word][1] post donde se responden con detalle las tres primeras preguntas de esta lección.
@@ -70,6 +75,7 @@ Enlaces recomendados para cada lección:
 * [Presentación][22] de la Lección 4.
 * [Presentación][25] de la Lección 5.
 * [Tablas y cuadros][26] post sobre cómo construir tablas y cuadros simples.
+* [Presentación][29] de la Lección 6.
 
 Documentación y ayuda de LaTeX
 En inglés
@@ -98,6 +104,11 @@ Alli respondemos preguntas, discutimos el uso de paquetes, comandos etc y nos ma
 * Canal: https://t.me/LaTeX4all
 En este canal publicamos cápsulas (mini tutoriales), compartimos documentación, libros etc.
 
+## Licencia
+Todos los contenidos de este repositorio estan a disposición bajo los términos de la licencia [CC-By-NC-SA 4.0 Internacional][27] y el código de los ejemplos, presentaciones y demás bajo los términos de la licencia [LPPL 1.3+][28].
+
+Usted es libre de utilizar, modificar y compartir sus propias versiones de estos contenidos siempre que respete los términos de estas licencias.
+
 [1]: ./2017-05-13-Latex_vs_Word.md
 [2]: https://www.overleaf.com
 [3]: ./presentaciones/leccion_1.pdf
@@ -118,11 +129,15 @@ En este canal publicamos cápsulas (mini tutoriales), compartimos documentación
 [18]: http://www.xm1math.net/texmaker/download.html
 [19]: https://www.overleaf.com/signup?ref=723765e6052f
 [20]: https://archive.org/stream/symbols-a4#page/n0/mode/2up
-[21]: ./ejemplos
+[21]: ./ejemplos/Readme.md
 [22]: ./presentaciones/leccion_4.pdf
 [23]: https://youtu.be/vEkD0KlBlPY
 [24]: https://youtu.be/c_E4c9PFj4o
 [25]: ./presentaciones/leccion_5.pdf
 [26]: ./2017-06-15-Tablas_cuadros.md
+[27]: https://creativecommons.org/licenses/by-nc-sa/4.0/
+[28]: https://www.latex-project.org/lppl/lppl-1-3c/
+[29]: ./presentaciones/leccion_6.pdf
+[30]: https://youtu.be/E25eZzg_7H4?list=PLg_LCjJz-AspniCManjAu3LBGmg6mvcKs
 
 
