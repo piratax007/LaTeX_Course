@@ -60,7 +60,7 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 	* Agregar color
 	* Combinar celdas
 
-### [Leccion 6][30]: Documentos dinámicos y referencias cruzadas
+### [Lección 6][30]: Documentos dinámicos y referencias cruzadas
 * Contadores
 * Referencias cruzadas
 * Documentos dinámicos - el paquete `hyperref`
@@ -69,13 +69,8 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 Enlaces recomendados para cada lección:
 * [LaTeX vs Word][1] post donde se responden con detalle las tres primeras preguntas de esta lección.
 * [Instalación y primeros pasos][5] post donde se enseña a configurar una instalación local en GNU / Linux y a disponer de diccionarios para la corrección ortográfica de sus documentos, aquí encontrará un primer ejercicio a desarrollar bien desde el editor en línea [Overleaf][2] o bien desde su instalación local.
-* [Presentación][3] de la Lección 1.
-* [Presentación][15] de la Lección 2.
-* [Presentación][17] de la Lección 3.
-* [Presentación][22] de la Lección 4.
-* [Presentación][25] de la Lección 5.
+* [Repositorio de las presentaciones del curso][3].
 * [Tablas y cuadros][26] post sobre cómo construir tablas y cuadros simples.
-* [Presentación][29] de la Lección 6.
 
 Documentación y ayuda de LaTeX
 En inglés
@@ -111,7 +106,7 @@ Usted es libre de utilizar, modificar y compartir sus propias versiones de estos
 
 [1]: ./2017-05-13-Latex_vs_Word.md
 [2]: https://www.overleaf.com
-[3]: ./presentaciones/leccion_1.pdf
+[3]: ./presentaciones/Readme.md
 [4]: https://www.youtube.com/watch?v=cwCQm61-LP0
 [5]: ./2017-05-15-Instalacion_primeros_pasos.md
 [6]: https://youtu.be/YzsTrIP-geQ
