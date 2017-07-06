@@ -1,14 +1,12 @@
 # Curso de Introducción a LaTeX
 
-En este repositorio encuentra todos los materiales de formación, ejercicios, solución de los ejercicios, presentaciones y lecturas recomendadas, del curso de **introducción a LaTeX**.
+En este repositorio encuentra todos los materiales de formación, ejercicios, solución de los ejercicios, presentaciones y lecturas recomendadas, del curso de **introducción a LaTeX** disponible en [BrainOnTube][32].
 
-Esta primera versión del curso esta dirigido a usuarios que no han tenido ninguna aproximación al trabajo con LaTeX por lo tanto los contenidos aquí publicados son aptos para los más nóveles, sin embargo, en versiones posteriores de este curso se pretende abordar paquetes y librerías específicas para el trabajo avanzado con LaTeX hasta llegar a la creación de hojas de estilo personalizadas.
+Este es un curso introductorio que permite a usuarios nóveles conocer la producción de documentos con LaTeX y desarrollar documentos con elementos interactivos y de contenidos presentes en cualquier texto, tablas, cuadros, figuras, tablas de contenido, referencias bibliográficas, etc.
 
 ## Contenido del curso
 
-Para desarrollar este curso se ha recomendado utilizar texmaker, editor LaTeX (Software Libre y multiplataforma) que puede descargar en su versión más actualizada desde [aquí][18] (si usted es usuario de GNU/Linux puede hacer la instalación desde los repositorios de su distribución), y **Overleaf**, una de las plataformas de edición de documentos LaTeX en línea mejor reconocidas, puede habilitar su cuenta gratuita desde [aquí][19].
-
-Los contenidos del repositorio se actualizarán permanentemente de acuerdo a como se desarrollen las sesiones de trabajo.
+Para desarrollar este curso se ha recomendado utilizar texmaker, editor LaTeX (Software Libre y multiplataforma) que puede descargar en su versión más actualizada desde [aquí][18] (si usted es usuario de GNU/Linux puede hacer la instalación desde los repositorios de su distribución), y **Overleaf**, una de las mejores plataformas online de edición de documentos LaTeX, puede habilitar su cuenta gratuita [aquí][19].
 
 ### [Lección 1][4]: Introducción y primeros pasos
 * ¿Qué es LaTeX?
@@ -65,6 +63,11 @@ Los contenidos del repositorio se actualizarán permanentemente de acuerdo a com
 * Referencias cruzadas
 * Documentos dinámicos - el paquete `hyperref`
 
+### [Lección 7][31]: Referencias bibliográficas
+* El programa `bibtex`
+* Bases de datos bibliograficas
+* Citación bibliográfica en documentos LaTeX
+
 #### Documentación
 Enlaces recomendados para cada lección:
 * [LaTeX vs Word][1] post donde se responden con detalle las tres primeras preguntas de esta lección.
@@ -86,12 +89,10 @@ En español
 * [Repositorio de plantillas de Overleaf][14]
 * [Repositorio de ejemplos de este curso][21]
 
-## Contacto y soporte
-Para poder proveer un permanente soporte se han habilitado los siguientes canales de comunicación:
+## Contacto
 
 ### Vía mail
-* Profesor: Fausto Mauricio Lagos Suárez - piratax007@gmail.com
-* Asistente: Lina Porras - linaporras@gmail.com
+Fausto Mauricio Lagos Suárez - piratax007@gmail.com y Lina Porras - linaporras@gmail.com
 
 ### Telegram
 * Grupo: https://t.me/joinchat/AAAAAER0f6R6xk2llCon3A
@@ -134,5 +135,7 @@ Usted es libre de utilizar, modificar y compartir sus propias versiones de estos
 [28]: https://www.latex-project.org/lppl/lppl-1-3c/
 [29]: ./presentaciones/leccion_6.pdf
 [30]: https://youtu.be/E25eZzg_7H4?list=PLg_LCjJz-AspniCManjAu3LBGmg6mvcKs
+[31]: https://youtu.be/dGUy3msc_sU
+[32]: https://www.youtube.com/c/BrainOnTube
 
 

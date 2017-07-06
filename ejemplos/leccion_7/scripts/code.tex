@@ -1,0 +1,121 @@
+%% -----------------------------------------------------------------------------
+%% 2017 por Fausto M. Lagos S. <piratax007@protonmail.ch>
+%% 
+%% Este trabajo puede ser distribuido o modificado bajo los
+%% términos y condiciones de la LaTeX Project Public License (LPPL) v1.3C, 
+%% o cualquier versión posterior. La última versión de esta licencia
+%% puede verse en:
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% -----------------------------------------------------------------------------
+%% Usted es libre de usarlo, modificarlo o distribuirlo siempre que se
+%% respeten los términos de la licencia y se reconozca a los autores originales
+%% -----------------------------------------------------------------------------
+%% Estos comandos y ambientes están desarrollados para el Curso de LaTeX
+%% de https://www.youtube.com/c/BrainOnTube y algunos han sido desarrollados
+%% por https://github.com/jdleesmiller/latex-course, tenga presente sus
+%% nombres y licencia para poder hacer uso de éstos.
+%% -----------------------------------------------------------------------------
+
+\usepackage{xkeyval}
+\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{
+	calc, angles, quotes, positioning,
+    babel, shapes, arrows, shadows
+    }
+\usepackage{tcolorbox}
+\usepackage{xstring}
+
+\newcommand{\bftt}[1]{\textbf{\texttt{#1}}}
+\newcommand*\keystroke[1]{%
+  \tikz[baseline=(key.base)]
+    \node[%
+      draw,
+      fill=white,
+      drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+      rectangle,
+      rounded corners=2pt,
+      inner sep=1pt,
+      line width=0.5pt,
+      font=\scriptsize\sffamily
+    ](key) {#1\strut}
+  ;
+}
+\newcommand{\keystrokebftt}[1]{\keystroke{\bftt{#1}}}
+\renewcommand{\comment}[1]{{\color[HTML]{008080}\textit{\textbf{\texttt{#1}}}}}
+\newcommand{\cmd}[1]{{\color[HTML]{008000}\bftt{#1}}} % comandos
+\newcommand{\bs}{\char`\\}
+\newcommand{\cmdbs}[1]{\cmd{\bs#1}}
+\newcommand{\lcb}{\char '173}
+\newcommand{\rcb}{\char '175}
+\newcommand{\cmdbegin}[1]{\cmdbs{begin\lcb}\bftt{#1}\cmd{\rcb}}
+\newcommand{\cmdend}[1]{\cmdbs{end\lcb}\bftt{#1}\cmd{\rcb}}
+\newcommand{\wllogo}{\textbf{Overleaf}}
+
+\newenvironment{exampletwouptiny}
+  {\VerbatimEnvironment
+   \begin{VerbatimOut}{example.out}}
+  {\end{VerbatimOut}
+   \setlength{\parindent}{0pt}
+   \fbox{\begin{tabular}{l|l}
+   \begin{minipage}{0.55\linewidth}
+     \inputminted[fontsize=\scriptsize,resetmargins]{latex}{example.out}
+   \end{minipage} &
+   \begin{minipage}{0.35\linewidth}
+     \setlength{\parskip}{6pt plus 1pt minus 1pt}%
+     \raggedright\scriptsize\input{example.out}
+   \end{minipage}
+   \end{tabular}}}
+   
+\newenvironment{exampletwouptinynoframe}
+  {\VerbatimEnvironment
+   \begin{VerbatimOut}{example.out}}
+  {\end{VerbatimOut}
+   \setlength{\parindent}{0pt}
+   \begin{tabular}{l|l}
+   \begin{minipage}{0.55\linewidth}
+     \inputminted[fontsize=\scriptsize,resetmargins]{latex}{example.out}
+   \end{minipage} &
+   \begin{minipage}{0.35\linewidth}
+     \setlength{\parskip}{6pt plus 1pt minus 1pt}%
+     \raggedright\scriptsize\input{example.out}
+   \end{minipage}
+   \end{tabular}}
+
+\newcommand\diag[4]{%
+  \multicolumn{1}{p{#2}|}{\hskip-\tabcolsep
+  $\vcenter{\begin{tikzpicture}[baseline=0,anchor=south west,inner sep=#1]
+  \path[use as bounding box] (0,0) rectangle (#2+2\tabcolsep,\baselineskip);
+  \node[minimum width={#2+2\tabcolsep-\pgflinewidth},
+        minimum  height=\baselineskip+\extrarowheight-\pgflinewidth] (box) {};
+  \draw[line cap=round] (box.north west) -- (box.south east);
+  \node[anchor=south west] at (box.south west) {#3};
+  \node[anchor=north east] at (box.north east) {#4};
+ \end{tikzpicture}}$\hskip-\tabcolsep}}
+ 
+\newtheorem{definition}{\bf Definición:}
+
+\newtheorem{ejemplo}{\bf Ejemplo:}[section]
+
+\newcounter{remark}
+\newenvironment{remark}[1]
+{
+	\refstepcounter{remark}
+	\begin{tcolorbox}[colback = myBlue!25, colframe = firebrick!75, title=\textbf{Observación \theremark: } #1, arc = 3mm, sharp corners = northwest]
+	\fontfamily{qag}\selectfont
+}
+{
+	\end{tcolorbox}
+}
+
+\newcommand{\Ref}[2]{
+	\IfEqCase {#1}{
+		{fig}{
+			\textbf{Fig. \ref{#2}}
+		}
+		{tab}{
+			\textbf{Tabla. \ref{#2}}
+		}
+	}
+}

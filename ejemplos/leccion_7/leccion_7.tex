@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[table]{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{vmargin}
+\setmargins{2.5cm} % margen izquierdo
+{1.5cm} % Margen superior
+{16.5cm} % Ancho del área de impresión
+{23.42cm} % Largo del área de impresión
+{10pt} % Espacio de encabezado
+{1cm} % Espacio entre encabezado y texto
+{0pt} % Espacio de pie de página
+{1cm} % Espacio entre el texto y el pie de pagina
+\usepackage{hyperref}
+\hypersetup{
+colorlinks = true,
+linkcolor = blueSpider,
+filecolor = ochre,
+urlcolor = myBlue,
+linktoc = page, % En la tabla de contenido, asigna los enlaces a los número de las páginas no a los títulos
+citecolor = ochre,
+}
+\usepackage{natbib}
+
+
+\input{./scripts/code.tex}
+\input{./scripts/colores.tex}
+
+
+\title{Ejemplos Lección 7 - Referencias bibliográficas}
+\author{Mg. Fausto Mauricio Lagos Suárez}
+\date{\today}
+
+\begin{document}
+\maketitle
+\renewcommand{\refname}{Bibliografía} % \bibname si se trata de la clase de documento book
+\renewcommand{\contentsname}{Tabla de Contenido}
+
+\tableofcontents
+
+\section{Construir la base de datos bibliográfica}
+
+Lo primero para manejar referencias bibliográficas en un documento \LaTeX{} es disponer de una base de datos bibliográfica la cual deberá estar almacenada en un documento de texto plano con extensión \bftt{.bib}, estas bases de datos, al ser texto plano, pueden ser creadas con cualquier editor de texto plano como \bftt{emacs} (en GNU/Linux). Cada entrada de un archivo \bftt{.bib} tiene unos campos específicos a completar (algunos obligatorio, otros opcionales) de acuerdo al tipo de documento al que se refiera, estos son algunos ejemplos:
+
+\begin{minted}[frame=single]{latex}
+@BOOK{Carnevale2006,
+author = {Carnevale, N.T. and Hines, M.L.},
+title = {The Neuron Book},
+publisher = {Cambridge University Press},
+year = {2006}
+}
+
+@ARTICLE{Barden_Zumino, 
+author = {Barden, William and Zumino, Bruno},
+title = {Consistent and covariant anomalies in gauge and gravitational theories},
+year = {1984},
+journal = {Nuclear-Phys, B},
+volume = {224},
+number = {2},
+pages = {421--453}
+}
+\end{minted}
+
+El primer elemento necesario es la clave bibliográfica, es decir el nombre que se le da al documento dentro de la lista bibliográfica, es el nombre utilizado para referirse a este documento en particular mediante el comando \cmdbs{cite}, los demás elementos dependen del tipo de documento en particular y no todos son obligatorios.
+
+A pesar de que se puede crear una base de datos \bftt{.bib} completamente desde cero agregando entrada por entrada en un archivo de texto plano, esta es una opción poco eficiente y que puede estar acompañada de errores en la edición de las entradas, errores que resultaran en problemas al momento de compilar el documento.
+
+Existen alternativas a la edición manual del archivo \bftt{.tex}, algunas de ellas disponibles en la nube, tales como \href{https://www.zotero.org/}{Zotero} o \href{https://www.mendeley.com/}{Mendeley}, las cuales cuentan con aplicación \emph{Desktop} disponible para su descarga gratuitamente (Zotero bajo licencia de software libre AGPL) y multiplataforma; también existen excelentes opciones fuera de la nube (sin servidores de sincronización) tales como \href{http://www.jabref.org/}{jabref} (Software Libre y multiplataforma) que permite extraer la información bibliográfica directamente desde sitios tales como \href{https://books.google.com/}{Google Books}, \href{https://scholar.google.com/}{Google Académico} o \href{https://arxiv.org/}{arXiv} o archivos \bftt{bibtex}.
+
+\section{Agregar la base de datos bibliográfica al documento}
+
+Se deben agregar los comando \cmdbs{bibliographystyle} y \cmdbs{bibliography} en el lugar donde se quiera aparezca la lista bibliográfica. 
+
+\begin{minted}[frame=single]{latex}
+\bibliographystyle{amsplain}
+\bibliography{archivo_bib-1,archivo_bib-n}
+\end{minted}
+
+Existen muy variados \emph{estilos} de presentación de las referencias bibliográficas, algunos de los cuales requieren cargar algún paquete específico en el preámbulo que puede ofrecer alguna extensión a los comandos de citación generales, los estilos más comunes son \bftt{amsplain} un estilo de presentación de la referencia mediante un número de indexado en la lista bibliográfica, \bftt{amsalpha} un estilo que presenta la referencia bibliográfica mediante un ``acrónimo'' que es combinación del apellido o nombre el autor y el año de publicación, \bftt{apalike} un estilo \bftt{autor - año} tipo normas APA y el estilo \bftt{agsm} (correspondiente al estilo Harvard) del paquete \bftt{natbib}.
+
+\subsection{Citas bibliográficas}
+
+En un documento pueden incluirse citas bibliográficas o no, en el caso en el que no se incluyan citas bibliográficas pero se quiera agregar una lista bibliográfica el comando \cmdbs{nocite\{*\}} se encargará de incluir toda la lista bibliográfica sin importar si se ha citado o no, en el caso en el que se quieran agregar a lista elementos específicos que no se han citado en el documento puede usarse \cmdbs{nocite\{clave\}} donde \bftt{clave} es la clave bibliográfica del documento a incluir; en cualquier otro caso, en el que se quiera agregar citas bibliográficas dentro del documento, el comando \cmdbs{cite\{clave\}} se encargar de crear la cita en el \emph{estilo} elegido y de generar la referencia cruzada correspondiente, el paquete \cmd{hyperref} es el encargado de generar el enlace dinámico.
+
+\subsubsection{Ejemplos de citación bibliográfica}
+
+\lipsum[2]
+
+Aquí aparecerá una cita bibliográfica a \cite{Bellman2013} 
+
+\subsubsection{Compilación con referencias bibliográficas}
+
+La compilación de documentos \LaTeX{} que contienen referencias bibliográficas depende del editor que este utilizando, en particular, en el caso de \bftt{Texmaker} primero debe ejecutarse el programa \bftt{bibtex} con \keystroke{F11} y luego compilar el documento dos veces con \keystroke{F1}, en el caso de \wllogo{} la compilación es automática.
+
+Algunas veces, cuando se prueban diferentes estilos bibliográficos en el mismo documento se generan errores de compilación al cambiar de uno a otro, esto sucede porque las referencias bibliográficas citadas se cargan en el archivo \bftt{.aux} con los campos necesarios para un estilo específico, al cambiar el estilo puede que la información contenida en el archivo \bftt{.aux} no se ajuste al nuevo estilo seleccionado, en una instalación local, por ejemplo con \bftt{texmaker} es recomendable borrar el archivo \bftt{.aux} antes de ejecutar el programa \bftt{bibtex} y compilar el documento con un nuevo estilo bibliográfico, en el caso de \wllogo{} lo recomendable es utilizar la opción \bftt{compile from scrath}.
+
+\lipsum[1]
+
+\phantomsection
+\addcontentsline{toc}{section}{Bibliografía} % Incluye la bibligrafía en la tabla de contenido
+\bibliographystyle{agsm}
+\bibliography{biblio}
+\nocite{Campbell2011}
+
+\end{document}

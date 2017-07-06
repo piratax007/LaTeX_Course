@@ -46,6 +46,12 @@ Otros documentos que pueden consultarse y sobre los que se han construido los co
 * Referencias cruzadas
 * Documentos dinámicos - el paquete `hyperref`
 
+## Presentación 7: [Referencias bibliográficas][10]
+* El programa `bibtex`
+* Bases de datos bibliográficas
+	* El archivo `.bib`
+* Citación bibliográficas en documentos `LaTeX`
+
 ## Licencia
 
 Estas presentaciones estan disponibles bajo una licencia [CC-By-NC-SA 4.0 Internacional][7] y sus fuentes bajo la licencia [LPPL 1.3+][8], usted es libre de utilizarlas, modificarlas y compartirlas siempre que respete al autor original y sus modificaciones las comparta bajo los términos de las mismas licencias.
@@ -61,3 +67,4 @@ Los contenidos de estas presentaciones están construidos con base en el curso *
 [7]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [8]: https://www.latex-project.org/lppl/lppl-1-3c/
 [9]: ./leccion_6.pdf
+[10]: ./leccion_7.pdf

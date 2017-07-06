@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+@BOOK\PYG{n+nb}{\PYGZob{}}Carnevale2006,
+author = \PYG{n+nb}{\PYGZob{}}Carnevale, N.T. and Hines, M.L.\PYG{n+nb}{\PYGZcb{}},
+title = \PYG{n+nb}{\PYGZob{}}The Neuron Book\PYG{n+nb}{\PYGZcb{}},
+publisher = \PYG{n+nb}{\PYGZob{}}Cambridge University Press\PYG{n+nb}{\PYGZcb{}},
+year = \PYG{n+nb}{\PYGZob{}}2006\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+
+@ARTICLE\PYG{n+nb}{\PYGZob{}}Barden\PYG{n+nb}{\PYGZus{}}Zumino,
+author = \PYG{n+nb}{\PYGZob{}}Barden, William and Zumino, Bruno\PYG{n+nb}{\PYGZcb{}},
+title = \PYG{n+nb}{\PYGZob{}}Consistent and covariant anomalies in gauge and gravitational theories\PYG{n+nb}{\PYGZcb{}},
+year = \PYG{n+nb}{\PYGZob{}}1984\PYG{n+nb}{\PYGZcb{}},
+journal = \PYG{n+nb}{\PYGZob{}}Nuclear\PYGZhy{}Phys, B\PYG{n+nb}{\PYGZcb{}},
+volume = \PYG{n+nb}{\PYGZob{}}224\PYG{n+nb}{\PYGZcb{}},
+number = \PYG{n+nb}{\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}},
+pages = \PYG{n+nb}{\PYGZob{}}421\PYGZhy{}\PYGZhy{}453\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

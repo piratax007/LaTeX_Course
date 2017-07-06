@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}bibliographystyle}\PYG{n+nb}{\PYGZob{}}amsplain\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}bibliography}\PYG{n+nb}{\PYGZob{}}archivo\PYG{n+nb}{\PYGZus{}}bib\PYGZhy{}1,archivo\PYG{n+nb}{\PYGZus{}}bib\PYGZhy{}n\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
